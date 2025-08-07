@@ -1,12 +1,19 @@
-import { Link } from 'react-router'
+import { Routes, Route } from 'react-router'
 import './App.css'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Header from './components/layout/Header.jsx'
 
 function App() {
-
   return (
     <>
-      <h1>首页</h1>
-      <Link to="/about">About</Link>|
+      <Header />
+      <main style={{ padding: '0 2rem' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
     </>
   )
 }
