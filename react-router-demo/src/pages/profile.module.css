@@ -1,0 +1,475 @@
+/* Profile Container */
+.profileContainer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.userCard {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #f0f0f0;
+}
+
+.userName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.userEmail {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.userStats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.navItem:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.navItemActive {
+  background: #007bff;
+  color: #fff;
+}
+
+.navIcon {
+  font-size: 1.2rem;
+}
+
+.navLabel {
+  font-weight: 500;
+}
+
+/* Content Area */
+.content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.pageTitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Profile Info Styles */
+.profileInfo {
+  max-width: 800px;
+}
+
+.infoCard {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.infoSection {
+  margin-bottom: 2rem;
+}
+
+.infoSection:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.infoLabel {
+  font-weight: 500;
+  color: #666;
+  min-width: 100px;
+}
+
+.infoValue {
+  color: #333;
+  flex: 1;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.editButton,
+.changePasswordButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.editButton {
+  background: #007bff;
+  color: #fff;
+}
+
+.editButton:hover {
+  background: #0056b3;
+}
+
+.changePasswordButton {
+  background: #6c757d;
+  color: #fff;
+}
+
+.changePasswordButton:hover {
+  background: #545b62;
+}
+
+/* Purchased Products Styles */
+.purchasedProducts {
+  width: 100%;
+}
+
+.productsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.productItem {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  align-items: center;
+}
+
+.productImage img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.productName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e74c3c;
+  margin: 0;
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.orderNumber,
+.purchaseDate {
+  color: #666;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.statusCompleted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.productActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actionButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  background: #fff;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Liked Products Styles */
+.likedProducts {
+  width: 100%;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.likedProductCard {
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.likedProductCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.likedProductCard .productImage {
+  position: relative;
+  height: 200px;
+}
+
+.likedProductCard .productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.unlikeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.likedProductCard .productInfo {
+  padding: 1rem;
+}
+
+.likedProductCard .productName {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.likedProductCard .productPrice {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.productDescription {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.productMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.productCategory {
+  background: #e9ecef;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.likeDate {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.likedProductCard .productActions {
+  padding: 0 1rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.addToCartButton,
+.viewDetailsButton {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.addToCartButton {
+  background: #28a745;
+  color: #fff;
+}
+
+.addToCartButton:hover {
+  background: #218838;
+}
+
+.viewDetailsButton {
+  background: #007bff;
+  color: #fff;
+}
+
+.viewDetailsButton:hover {
+  background: #0056b3;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.emptyState p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .productItem {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .productImage img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+}
