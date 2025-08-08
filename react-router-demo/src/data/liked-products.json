@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "iPad Pro 11",
+    "price": 6799,
+    "category": "平板",
+    "image": "https://fpoimg.com/200x200?text=?text=iPad+Pro",
+    "description": "专业生产力工具",
+    "likeDate": "2024-01-18"
+  },
+  {
+    "id": 2,
+    "name": "MacBook Pro 14",
+    "price": 14999,
+    "category": "电脑",
+    "image": "https://fpoimg.com/200x200?text=?text=MBP14",
+    "description": "强劲性能，专业创作",
+    "likeDate": "2024-01-16"
+  },
+  {
+    "id": 3,
+    "name": "Apple TV 4K",
+    "price": 1299,
+    "category": "影音",
+    "image": "https://fpoimg.com/200x200?text=?text=Apple+TV",
+    "description": "支持杜比视界和Atmos的流媒体播放器",
+    "likeDate": "2024-01-14"
+  },
+  {
+    "id": 4,
+    "name": "HomePod mini",
+    "price": 749,
+    "category": "音箱",
+    "image": "https://fpoimg.com/200x200?text=?text=HomePod",
+    "description": "小体积大能量的智能音箱",
+    "likeDate": "2024-01-12"
+  },
+  {
+    "id": 5,
+    "name": "Magic Keyboard",
+    "price": 749,
+    "category": "配件",
+    "image": "https://fpoimg.com/200x200?text=?text=Keyboard",
+    "description": "舒适的剪刀式结构键盘",
+    "likeDate": "2024-01-10"
+  },
+  {
+    "id": 6,
+    "name": "Beats Studio Buds",
+    "price": 1099,
+    "category": "耳机",
+    "image": "https://fpoimg.com/200x200?text=?text=Beats+Buds",
+    "description": "紧凑降噪入耳式耳机",
+    "likeDate": "2024-01-08"
+  },
+  {
+    "id": 7,
+    "name": "Beats Pill+",
+    "price": 1299,
+    "category": "音箱",
+    "image": "https://fpoimg.com/200x200?text=?text=Pill+Speaker",
+    "description": "便携蓝牙音箱",
+    "likeDate": "2024-01-06"
+  },
+  {
+    "id": 8,
+    "name": "Magic Trackpad",
+    "price": 999,
+    "category": "配件",
+    "image": "https://fpoimg.com/200x200?text=?text=Trackpad",
+    "description": "大面积玻璃触控板",
+    "likeDate": "2024-01-04"
+  }
+]

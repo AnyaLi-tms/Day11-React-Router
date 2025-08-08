@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro",
+    "price": 7999,
+    "image": "https://fpoimg.com/200x200?text=?text=iPhone",
+    "purchaseDate": "2024-01-15",
+    "orderNumber": "ORD20240115001",
+    "status": "已完成"
+  },
+  {
+    "id": 2,
+    "name": "AirPods Pro",
+    "price": 1999,
+    "image": "https://fpoimg.com/200x200?text=?text=AirPods",
+    "purchaseDate": "2024-01-10",
+    "orderNumber": "ORD20240110002",
+    "status": "已完成"
+  },
+  {
+    "id": 3,
+    "name": "MacBook Air M2",
+    "price": 8999,
+    "image": "https://fpoimg.com/200x200?text=?text=MacBook",
+    "purchaseDate": "2024-01-05",
+    "orderNumber": "ORD20240105003",
+    "status": "已完成"
+  },
+  {
+    "id": 4,
+    "name": "Apple Watch Series 9",
+    "price": 2999,
+    "image": "https://fpoimg.com/200x200?text=?text=Watch",
+    "purchaseDate": "2023-12-20",
+    "orderNumber": "ORD20231220004",
+    "status": "已完成"
+  },
+  {
+    "id": 5,
+    "name": "iPad Air",
+    "price": 4399,
+    "image": "https://fpoimg.com/200x200?text=?text=iPad",
+    "purchaseDate": "2023-12-15",
+    "orderNumber": "ORD20231215005",
+    "status": "已完成"
+  },
+  {
+    "id": 6,
+    "name": "Magic Keyboard",
+    "price": 749,
+    "image": "https://fpoimg.com/200x200?text=?text=Keyboard",
+    "purchaseDate": "2023-12-10",
+    "orderNumber": "ORD20231210006",
+    "status": "已完成"
+  }
+]
