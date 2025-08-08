@@ -5,6 +5,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-text: #333;
+  --color-text-muted: #666;
+  --color-primary: #007bff;
+  --color-bg: #f7f7f9;
+  --radius-md: 8px;
+  --border-color: #ddd;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --content-max-width: 1200px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,12 +36,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  color: #333;
+  color: var(--color-text);
+  background: var(--color-bg);
+  margin: 0;
+}
+
+/* 基本排版 */
+h1, h2, h3 {
+  line-height: 1.25;
+  margin-bottom: var(--spacing-md);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+small, .muted {
+  color: var(--color-text-muted);
 }
 
 /* 链接样式 */
 a {
-  color: #007bff;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -29,7 +70,7 @@ a:hover {
 button {
   cursor: pointer;
   padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   background-color: #fff;
   font-size: 1rem;
@@ -39,19 +80,33 @@ button:hover {
   background-color: #f8f9fa;
 }
 
-/* 容器样式 */
+/* 容器样式（居中且有桌面端留白） */
 .container {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
 }
 
 /* 卡片样式 */
 .card {
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
   padding: 1.5rem;
   margin: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 页内通用间距工具类 */
+.section {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+/* 大屏额外优化 */
+@media (min-width: 1440px) {
+  :root {
+    --content-max-width: 1280px;
+  }
 }
