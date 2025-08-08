@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <Header />
-      <main style={{ padding: '0 2rem' }}>
+      <main className='container section'>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
         </Routes>
       </main>
     </>

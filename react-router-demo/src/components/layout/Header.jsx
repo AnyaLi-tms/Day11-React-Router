@@ -1,21 +1,15 @@
 import { Link } from 'react-router'
+import styles from './Header.module.css'
 
 function Header() {
   return (
-    <header style={{ 
-      padding: '1rem', 
-      backgroundColor: '#f5f5f5', 
-      borderBottom: '1px solid #ddd',
-      marginBottom: '2rem'
-    }}>
-      <nav>
-        <Link to="/" style={{ marginRight: '1rem', textDecoration: 'none', color: '#333' }}>
-          首页
-        </Link>
-        <Link to="/about" style={{ textDecoration: 'none', color: '#333' }}>
-          关于
-        </Link>
-      </nav>
+    <header className={styles.header}>
+      <div className={styles.inner}>
+        <nav className={styles.nav}>
+          <Link to='/' className={styles.link}>首页</Link>
+          <Link to='/about' className={styles.link}>关于</Link>
+        </nav>
+      </div>
     </header>
   )
 }
