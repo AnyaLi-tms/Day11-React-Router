@@ -2,10 +2,10 @@
  * 05-promise-all.js 测试文件
  */
 
-import { test, asyncTest, assert, assertEqual, showTestResults } from './test-framework.js';
+import { test, asyncTest, assert, assertEqual, showTestResults } from '../test-framework.js';
 
 // 导入被测试的函数
-import getAllPromise from './05-promise-all.js';
+import getAllPromise from '../05-promise-all.js';
 
 console.log('🧪 开始测试 05-promise-all.js\n');
 

@@ -2,10 +2,10 @@
  * 04-promise-error-handling.js 测试文件
  */
 
-import { test, asyncTest, assert, assertEqual, showTestResults } from './test-framework.js';
+import { test, asyncTest, assert, assertEqual, showTestResults } from '../test-framework.js';
 
 // 导入被测试的函数
-import fetchData from './04-promise-error-handling.js';
+import fetchData from '../04-promise-error-handling.js';
 
 console.log('🧪 开始测试 04-promise-error-handling.js\n');
 

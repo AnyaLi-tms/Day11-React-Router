@@ -5,9 +5,15 @@
   "description": "Promise 学习练习题 - 从基础到高级",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node run-all-tests.js",
+    "test:01": "node test/test-01.js",
+    "test:02": "node test/test-02.js",
+    "test:03": "node test/test-03.js",
+    "test:04": "node test/test-04.js",
+    "test:05": "node test/test-05.js"
   },
-  "keywords": ["promise", "javascript", "async", "learning"],
+  "keywords": ["promise", "javascript", "async", "learning", "testing"],
   "author": "",
   "license": "MIT",
   "devDependencies": {

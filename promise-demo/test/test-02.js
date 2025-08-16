@@ -2,10 +2,10 @@
  * 02-promise-then-catch.js 测试文件
  */
 
-import { test, asyncTest, assert, assertEqual, showTestResults } from './test-framework.js';
+import { test, asyncTest, assert, assertEqual, showTestResults } from '../test-framework.js';
 
 // 导入被测试的函数
-import processData from './02-promise-then-catch.js';
+import processData from '../02-promise-then-catch.js';
 
 console.log('🧪 开始测试 02-promise-then-catch.js\n');
 

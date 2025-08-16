@@ -2,10 +2,10 @@
  * 01-basic-promise.js 测试文件
  */
 
-import { test, asyncTest, assert, assertEqual, showTestResults } from './test-framework.js';
+import { test, asyncTest, assert, assertEqual, showTestResults } from '../test-framework.js';
 
 // 导入被测试的函数
-import delay from './01-basic-promise.js';
+import delay from '../01-basic-promise.js';
 
 console.log('🧪 开始测试 01-basic-promise.js\n');
 
