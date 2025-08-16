@@ -30,3 +30,5 @@ function basicAsync() {
 basicAsync().then(result => {
     console.log('  异步函数返回:', result);
 });
+
+export default basicAsync;
