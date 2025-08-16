@@ -21,7 +21,7 @@ function basicAsync() {
     // 等待 Promise 完成
     delay(1000);
     // 1秒后输出
-    console.log('  获取到结果:', result);
+    console.log('获取到结果:', result);
     
     return '函数执行完成';
 }
