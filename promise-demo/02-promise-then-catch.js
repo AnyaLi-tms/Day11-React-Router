@@ -28,3 +28,5 @@ processData('hello world')
 processData()
   .then(length => console.log('数据长度:', length))
   .catch(error => console.error('处理错误:', error)); // 处理错误: 数据为空
+
+export default processData;
