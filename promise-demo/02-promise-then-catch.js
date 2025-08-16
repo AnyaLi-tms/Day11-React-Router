@@ -1,5 +1,5 @@
 /**
- * 03-promise-then-catch.js
+ * 02-promise-then-catch.js
  * Promise 的 then() 和 catch() 方法 - 练习题
  * 
  * 学习目标：
@@ -24,7 +24,7 @@ processData('hello world')
   .then(length => console.log('数据长度:', length))
   .catch(error => console.error('处理错误:', error));
 
-// 测试基础then()用法
+// 测试错误处理
 processData()
   .then(length => console.log('数据长度:', length))
   .catch(error => console.error('处理错误:', error)); // 处理错误: 数据为空
