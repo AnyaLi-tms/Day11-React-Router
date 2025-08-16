@@ -6,3 +6,5 @@ async function fetchData() {
 }
 
 fetchData();
+
+export default fetchData;
