@@ -1,0 +1,16 @@
+{
+  "name": "promise-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Promise 学习练习题 - 从基础到高级",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["promise", "javascript", "async", "learning"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
