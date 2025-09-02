@@ -25,6 +25,9 @@ function Header() {
           <NavLink to='/about' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
             关于
           </NavLink>
+          <NavLink to='/profile' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
+            我的
+          </NavLink>
         </nav>
       </div>
     </header>
