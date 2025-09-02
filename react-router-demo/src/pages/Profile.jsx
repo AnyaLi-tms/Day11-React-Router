@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useLocation, Outlet } from 'react-router'
+import { Link, useLocation } from 'react-router'
 import styles from './profile.module.css'
 import userData from '../data/user.json'
 
@@ -50,7 +50,7 @@ function Profile() {
       </div>
 
       <div className={styles.content}>
-        <Outlet />
+        {/* <Outlet /> */}
       </div>
     </div>
   )
