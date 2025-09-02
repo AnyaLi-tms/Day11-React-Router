@@ -22,6 +22,9 @@ function Header() {
           <NavLink to='/products' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
             产品
           </NavLink>
+          <NavLink to='/profile' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
+            我的
+          </NavLink>
           <NavLink to='/about' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
             关于
           </NavLink>
