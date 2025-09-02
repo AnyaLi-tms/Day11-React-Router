@@ -1,7 +1,14 @@
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import styles from './Header.module.css';
 
 function Header() {
+  const activeClassName = (defaultClassName, isActive) => {
+    const className = [defaultClassName];
+    if(isActive) {
+      className.push(styles.active);
+    }
+    return className.join(' ');
+  }
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -12,9 +19,12 @@ function Header() {
           <Link to='/' className={styles.navLink}>
             首页
           </Link>
-          <Link to='/about' className={styles.navLink}>
+          <NavLink to='/products' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
+            产品
+          </NavLink>
+          <NavLink to='/about' className={({isActive}) => activeClassName(styles.navLink, isActive)}>
             关于
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </header>

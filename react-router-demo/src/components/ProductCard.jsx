@@ -1,4 +1,5 @@
 import styles from '../pages/product.module.css'
+import { Link } from 'react-router'
 
 function ProductCard({ product }) {
   return (
@@ -13,7 +14,7 @@ function ProductCard({ product }) {
       <p className={styles.description}>{product.description}</p>
       <div className={styles.cardFooter}>
         <span className={styles.badge}>{product.category}</span>
-        <button className={styles.detailsButton}>查看详情</button>
+        <Link to={`/products/${product.id}`} className={styles.detailsButton}>查看详情</Link>
       </div>
     </div>
   )

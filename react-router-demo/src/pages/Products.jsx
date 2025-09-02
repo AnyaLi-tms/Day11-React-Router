@@ -1,25 +1,45 @@
-import { useState } from 'react'
-import ProductCard from '../components/ProductCard.jsx'
-import styles from './product.module.css'
-import mockProducts from '../data/products.json'
-
+import { useState, useEffect } from 'react';
+import ProductCard from '../components/ProductCard.jsx';
+import styles from './product.module.css';
+import mockProducts from '../data/products.json';
+import { useSearchParams } from 'react-router';
 
 function Products() {
-  const [products] = useState(mockProducts)
-  const [selectedCategory, setSelectedCategory] = useState('全部')
-  const [searchTerm, setSearchTerm] = useState('')
+  const [products] = useState(mockProducts);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const selectedCategory = searchParams.get('category') || '全部';
+  const searchTerm = searchParams.get('search') || '';
 
   // 获取所有分类
-  const categories = ['全部', ...new Set(products.map(product => product.category))]
+  const categories = ['全部', ...new Set(products.map(product => product.category))];
 
   // 过滤产品
   const filteredProducts = products.filter(product => {
-    const matchesCategory = selectedCategory === '全部' || product.category === selectedCategory
+    const matchesCategory = selectedCategory === '全部' || product.category === selectedCategory;
     const matchesSearch =
       product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.description.toLowerCase().includes(searchTerm.toLowerCase())
-    return matchesCategory && matchesSearch
-  })
+      product.description.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
+
+  const handleSelectedCategory = category => {
+    // 处理异常和默认值
+    if (!category || category === '全部') {
+      setSearchParams({}); // 清空参数
+    } else {
+      setSearchParams({ category });
+    }
+  };
+
+  const handleInputSearch = searchTerm => {
+    const param = new URLSearchParams(searchParams);
+    param.set('search', searchTerm);
+    setSearchParams(param);
+  };
+
+  useEffect(() => {
+    //console.log(searchParams.get('category'));
+  }, [searchParams]);
 
   return (
     <div>
@@ -28,10 +48,10 @@ function Products() {
       <div className={styles.filters}>
         <div className={styles.searchBox}>
           <input
-            type="text"
-            placeholder="搜索产品..."
+            type='text'
+            placeholder='搜索产品...'
             value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
+            onChange={e => handleInputSearch(e.target.value)}
             className={styles.searchInput}
           />
         </div>
@@ -41,7 +61,7 @@ function Products() {
           {categories.map(category => (
             <button
               key={category}
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => handleSelectedCategory(category)}
               className={
                 selectedCategory === category
                   ? `${styles.categoryButton} ${styles.categoryButtonActive}`
@@ -68,7 +88,7 @@ function Products() {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Products
+export default Products;

@@ -1,9 +1,11 @@
 import { Link } from 'react-router'
 import products from '../data/products.json'
 import styles from './product.module.css'
+import { useParams } from 'react-router'
 
 function ProductDetail() {
-  const productId = 1
+  const { id } = useParams();
+  const productId = id ? parseInt(id, 10) : null;
   const product = products.find(p => p.id === productId)
 
   if (!product) {
