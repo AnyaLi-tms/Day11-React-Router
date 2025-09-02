@@ -1,10 +1,13 @@
 import useLoginStore from '../stores/appStore.js'
+import { useNavigate } from 'react-router'
 
 function Login() {
   const { login, logout } = useLoginStore()
+  const navigate = useNavigate()
 
   const handleLogin = () => {
     login()
+    navigate('/profile');
     alert('登录成功')
   }
   const handleLogout = () => {
